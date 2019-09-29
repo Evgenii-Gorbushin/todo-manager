@@ -1,0 +1,75 @@
+{
+  "name": "evgenvgx_todomanager",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "react-devtools": "react-devtools",
+    "test": "jest",
+    "flow": "flow"
+  },
+  "dependencies": {
+    "react": "16.6.3",
+    "react-dom": "^16.7.0",
+    "react-native": "0.57.8",
+    "react-navigation": "^3.0.9",
+    "react-native-screens": "^1.0.0-alpha.19",
+    "react-native-gesture-handler": "^1.0.12",
+
+    "redux": "^4.0.1",
+    "react-redux": "^6.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+
+    "prop-types": "^15.6.2",
+    "immutable": "^4.0.0-rc.12",
+
+    "react-native-android-voice": "^0.6.0",
+    "react-native-localization": "^2.0.3",
+    "react-native-draggable-flatlist": "^1.1.7"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "0.51.1",
+
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "@babel/core": "^7.2.2",
+
+    "flow-bin": "^0.89.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/preset-flow": "^7.0.0",
+
+    "babel-eslint": "9.0.0",
+    "eslint": "5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "expect": "^23.6.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "react-test-renderer": "16.6.1",
+    "identity-obj-proxy": "^3.0.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "verbose": true,
+    "setupTestFrameworkScriptFile": "<rootDir>/src/jest/configureAdapter.js",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/jest/configureExtension.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  }
+}
